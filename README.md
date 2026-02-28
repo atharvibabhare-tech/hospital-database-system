@@ -58,4 +58,6 @@ This project contains:
 
 ---
 
+Bonus: Created a simple Streamlit dashboard to visualize database data.
+
  Created by Atharvi Babhare
