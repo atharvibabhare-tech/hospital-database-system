@@ -1,0 +1,16 @@
+medicine_id,medicine_name,category,price,expiry_date
+201,Paracetamol,"Pain Relief",25.00,2026-12-31
+202,Amoxicillin,Antibiotic,120.00,2025-08-15
+203,Metformin,Diabetes,90.00,2027-01-20
+204,Aspirin,Cardiac,30.00,2026-05-10
+205,Atorvastatin,Cholesterol,150.00,2026-11-05
+206,Omeprazole,Gastric,80.00,2025-10-18
+207,Insulin,Diabetes,450.00,2025-09-30
+208,Cetirizine,Allergy,40.00,2026-03-22
+209,Azithromycin,Antibiotic,200.00,2025-12-01
+210,Losartan,"Blood Pressure",110.00,2026-07-14
+211,"Vitamin D3",Supplement,60.00,2027-02-28
+212,"Calcium Tablets",Supplement,70.00,2026-09-19
+213,"Cough Syrup",Cold,95.00,2025-11-25
+214,"Antacid Gel",Gastric,55.00,2026-01-11
+215,"Pain Relief Spray",Orthopedic,160.00,2026-06-30

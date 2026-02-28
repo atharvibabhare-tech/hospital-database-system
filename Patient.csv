@@ -1,0 +1,21 @@
+patient_id,patient_name,age,gender,city,phone
+101,"Rahul Joshi",32,Male,Nagpur,9876500001
+102,"Sneha Patil",28,Female,Pune,9876500002
+103,"Amit Verma",45,Male,Delhi,9876500003
+104,"Pooja Shah",36,Female,Ahmedabad,9876500004
+105,"Rohan Kulkarni",50,Male,Mumbai,9876500005
+106,"Neha Gupta",24,Female,Jaipur,9876500006
+107,"Suresh Yadav",60,Male,Lucknow,9876500007
+108,"Kiran Malhotra",41,Male,Chandigarh,9876500008
+109,"Anjali Mehta",34,Female,Surat,9876500009
+110,"Vivek Nair",38,Male,Kochi,9876500010
+111,"Priya Iyer",29,Female,Chennai,9876500011
+112,"Nikhil Jain",47,Male,Indore,9876500012
+113,"Ritu Bhandari",52,Female,Bhopal,9876500013
+114,"Manoj Singh",65,Male,Patna,9876500014
+115,"Swati Deshpande",31,Female,Nashik,9876500015
+116,"Arvind Kumar",56,Male,Kanpur,9876500016
+117,"Shubham Mishra",27,Male,Rewa,9876500017
+118,"Komal Thakur",39,Female,Raipur,9876500018
+119,"Deepak Soni",44,Male,Udaipur,9876500019
+120,"Meera Salunke",35,Female,Kolhapur,9876500020

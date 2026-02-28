@@ -1,0 +1,21 @@
+doctor_id,doctor_name,specialization,experience_years,email,contact_number
+1,"Dr. Amit Sharma",Cardiology,12,amit.sharma@hospital.com,9876543210
+2,"Dr. Neha Verma",Neurology,9,neha.verma@hospital.com,9876543211
+3,"Dr. Rajiv Mehta",Orthopedics,15,rajiv.mehta@hospital.com,9876543212
+4,"Dr. Pooja Kulkarni",Gynecology,10,pooja.k@hospital.com,9876543213
+5,"Dr. Sanjay Patil","General Medicine",18,sanjay.p@hospital.com,9876543214
+6,"Dr. Ankit Jain",Dermatology,7,ankit.j@hospital.com,9876543215
+7,"Dr. Kavita Rao",Pediatrics,11,kavita.rao@hospital.com,9876543216
+8,"Dr. Rohit Iyer",ENT,8,rohit.iyer@hospital.com,9876543217
+9,"Dr. Sneha Deshmukh",Psychiatry,6,sneha.d@hospital.com,9876543218
+10,"Dr. Prakash Nair",Urology,14,prakash.n@hospital.com,9876543219
+11,"Dr. Arjun Malhotra",Oncology,16,arjun.m@hospital.com,9876543220
+12,"Dr. Ritu Bansal",Ophthalmology,9,ritu.b@hospital.com,9876543221
+13,"Dr. Sameer Khan",Pulmonology,13,sameer.k@hospital.com,9876543222
+14,"Dr. Anjali Gupta",Endocrinology,10,anjali.g@hospital.com,9876543223
+15,"Dr. Vikas Joshi",Radiology,17,vikas.j@hospital.com,9876543224
+16,"Dr. Meenal Chavan",Anesthesiology,8,meenal.c@hospital.com,9876543225
+17,"Dr. Ramesh Pillai",Nephrology,19,ramesh.p@hospital.com,9876543226
+18,"Dr. Nitin Agrawal",Gastroenterology,12,nitin.a@hospital.com,9876543227
+19,"Dr. Shilpa More",Rheumatology,7,shilpa.m@hospital.com,9876543228
+20,"Dr. Kunal Bhatt","Emergency Medicine",5,kunal.b@hospital.com,9876543229
