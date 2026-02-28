@@ -20,7 +20,7 @@ st.markdown("---")
 # (For deployment, you can replace this with CSV or database connection)
 
 doctors = pd.read_csv("doctors.csv")
-patients = pd.read_csv("patients.csv")
+patients = pd.read_csv("Patient.csv")
 appointments = pd.read_csv("appointments.csv")
 medicines = pd.read_csv("medicines.csv")
 
