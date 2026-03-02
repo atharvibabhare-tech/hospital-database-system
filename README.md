@@ -61,3 +61,6 @@ This project contains:
 Bonus: Created a simple Streamlit dashboard to visualize database data.
 
  Created by Atharvi Babhare
+ 
+## 🌐 Live Demo
+[Click Here to View Live App](https://hospital-database-system-e5axpesbb65zuws7dscac8.streamlit.app/)
