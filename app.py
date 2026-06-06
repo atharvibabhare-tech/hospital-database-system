@@ -18,23 +18,24 @@ st.markdown("""
 
     /* ---- Root Variables ---- */
     :root {
-        --bg-dark:       #0a0f1e;
-        --bg-card:       #111827;
-        --bg-card2:      #1a2236;
-        --accent-teal:   #00d4b1;
-        --accent-blue:   #3b82f6;
-        --accent-pink:   #f472b6;
-        --accent-amber:  #fbbf24;
-        --text-primary:  #f1f5f9;
-        --text-muted:    #94a3b8;
-        --border:        rgba(255,255,255,0.07);
-        --shadow:        0 8px 32px rgba(0,0,0,0.45);
+        --bg-main:       #f0f4f8;
+        --bg-card:       #ffffff;
+        --bg-card2:      #f8fafc;
+        --accent-teal:   #0891b2;
+        --accent-blue:   #2563eb;
+        --accent-pink:   #db2777;
+        --accent-amber:  #d97706;
+        --accent-green:  #059669;
+        --text-primary:  #1e293b;
+        --text-muted:    #64748b;
+        --border:        #e2e8f0;
+        --shadow:        0 4px 20px rgba(0,0,0,0.08);
     }
 
     /* ---- Global Reset ---- */
     html, body, [class*="css"] {
         font-family: 'DM Sans', sans-serif;
-        background-color: var(--bg-dark) !important;
+        background-color: var(--bg-main) !important;
         color: var(--text-primary) !important;
     }
 
@@ -44,15 +45,15 @@ st.markdown("""
 
     /* ---- App Background ---- */
     .stApp {
-        background: radial-gradient(ellipse at 10% 0%, #0d2137 0%, #0a0f1e 55%),
-                    radial-gradient(ellipse at 90% 100%, #0d1f3c 0%, transparent 60%);
-        background-color: var(--bg-dark) !important;
+        background: #f0f4f8 !important;
+        background-color: #f0f4f8 !important;
     }
 
     /* ---- Sidebar ---- */
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0d1b2e 0%, #0a1628 100%) !important;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
         border-right: 1px solid var(--border);
+        box-shadow: 2px 0 12px rgba(0,0,0,0.05);
     }
     [data-testid="stSidebar"] .block-container { padding: 1.5rem 1rem; }
 
@@ -62,7 +63,7 @@ st.markdown("""
         align-items: center;
         gap: 12px;
         padding: 1rem 0.5rem 1.5rem;
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid #e2e8f0;
         margin-bottom: 1.5rem;
     }
     .sidebar-logo-icon {
@@ -77,7 +78,7 @@ st.markdown("""
         font-family: 'Syne', sans-serif;
         font-weight: 800;
         font-size: 1.25rem;
-        color: var(--text-primary);
+        color: #1e293b;
         line-height: 1.1;
     }
     .sidebar-logo-sub {
@@ -92,16 +93,16 @@ st.markdown("""
         font-size: 0.65rem;
         letter-spacing: 0.15em;
         text-transform: uppercase;
-        color: var(--text-muted);
+        color: #94a3b8;
         padding: 0 0.5rem;
         margin-bottom: 0.5rem;
     }
     .stButton > button {
         width: 100%;
-        background: transparent !important;
-        border: 1px solid var(--border) !important;
+        background: #f1f5f9 !important;
+        border: 1px solid #e2e8f0 !important;
         border-radius: 10px !important;
-        color: var(--text-muted) !important;
+        color: #475569 !important;
         font-family: 'DM Sans', sans-serif !important;
         font-size: 0.88rem !important;
         font-weight: 500 !important;
@@ -112,19 +113,19 @@ st.markdown("""
         cursor: pointer !important;
     }
     .stButton > button:hover {
-        background: rgba(0,212,177,0.1) !important;
+        background: #e0f2fe !important;
         border-color: var(--accent-teal) !important;
         color: var(--accent-teal) !important;
         transform: translateX(4px) !important;
-        box-shadow: 0 0 20px rgba(0,212,177,0.15) !important;
+        box-shadow: 0 2px 12px rgba(8,145,178,0.15) !important;
     }
 
     /* Active nav button override via class */
     .nav-active > button {
-        background: linear-gradient(135deg, rgba(0,212,177,0.18), rgba(59,130,246,0.12)) !important;
+        background: linear-gradient(135deg, #e0f2fe, #dbeafe) !important;
         border-color: var(--accent-teal) !important;
         color: var(--accent-teal) !important;
-        box-shadow: 0 0 20px rgba(0,212,177,0.2) !important;
+        box-shadow: 0 2px 10px rgba(8,145,178,0.2) !important;
     }
 
     /* ---- Main Content ---- */
@@ -140,7 +141,7 @@ st.markdown("""
         gap: 1rem;
         margin-bottom: 2rem;
         padding-bottom: 1.5rem;
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid #e2e8f0;
     }
     .page-header-icon {
         font-size: 2.2rem;
@@ -151,13 +152,13 @@ st.markdown("""
         font-family: 'Syne', sans-serif;
         font-weight: 800;
         font-size: 2rem;
-        color: var(--text-primary);
+        color: #1e293b;
         line-height: 1.15;
         margin: 0;
     }
     .page-header-sub {
         font-size: 0.85rem;
-        color: var(--text-muted);
+        color: #64748b;
         margin-top: 2px;
     }
 
@@ -169,13 +170,14 @@ st.markdown("""
         margin-bottom: 2rem;
     }
     .metric-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
         border-radius: 16px;
         padding: 1.4rem 1.5rem;
         position: relative;
         overflow: hidden;
         transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     .metric-card::before {
         content: '';
@@ -193,14 +195,14 @@ st.markdown("""
         font-size: 0.72rem;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: var(--text-muted);
+        color: #64748b;
         margin-bottom: 0.6rem;
     }
     .metric-value {
         font-family: 'Syne', sans-serif;
         font-size: 2.4rem;
         font-weight: 800;
-        color: var(--text-primary);
+        color: #1e293b;
         line-height: 1;
         margin-bottom: 0.4rem;
     }
@@ -217,17 +219,18 @@ st.markdown("""
 
     /* ---- Section Cards ---- */
     .section-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
         border-radius: 16px;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     .section-card-title {
         font-family: 'Syne', sans-serif;
         font-weight: 700;
         font-size: 1rem;
-        color: var(--text-primary);
+        color: #1e293b;
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
@@ -238,16 +241,16 @@ st.markdown("""
     .stDataFrame {
         border-radius: 12px;
         overflow: hidden;
-        border: 1px solid var(--border) !important;
+        border: 1px solid #e2e8f0 !important;
     }
     [data-testid="stDataFrame"] > div {
         border-radius: 12px;
-        background: var(--bg-card2) !important;
+        background: #f8fafc !important;
     }
     .dataframe { background: transparent !important; }
     .dataframe th {
-        background: rgba(0,212,177,0.1) !important;
-        color: var(--accent-teal) !important;
+        background: #e0f2fe !important;
+        color: #0891b2 !important;
         font-family: 'Syne', sans-serif !important;
         font-size: 0.75rem !important;
         letter-spacing: 0.08em;
@@ -256,33 +259,33 @@ st.markdown("""
         padding: 0.8rem 1rem !important;
     }
     .dataframe td {
-        background: var(--bg-card2) !important;
-        color: var(--text-primary) !important;
-        border-bottom: 1px solid var(--border) !important;
+        background: #ffffff !important;
+        color: #1e293b !important;
+        border-bottom: 1px solid #f1f5f9 !important;
         font-size: 0.85rem !important;
         padding: 0.7rem 1rem !important;
     }
-    .dataframe tr:hover td { background: rgba(255,255,255,0.04) !important; }
+    .dataframe tr:hover td { background: #f0f9ff !important; }
 
     /* ---- Inputs ---- */
     .stTextInput > div > div > input,
     .stSelectbox > div > div > div {
-        background: var(--bg-card2) !important;
-        border: 1px solid var(--border) !important;
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
         border-radius: 10px !important;
-        color: var(--text-primary) !important;
+        color: #1e293b !important;
         font-family: 'DM Sans', sans-serif !important;
         padding: 0.6rem 1rem !important;
     }
     .stTextInput > div > div > input:focus,
     .stSelectbox > div > div > div:focus {
-        border-color: var(--accent-teal) !important;
-        box-shadow: 0 0 0 3px rgba(0,212,177,0.15) !important;
+        border-color: #0891b2 !important;
+        box-shadow: 0 0 0 3px rgba(8,145,178,0.15) !important;
     }
     .stSelectbox [data-baseweb="select"] > div {
-        background: var(--bg-card2) !important;
-        border-color: var(--border) !important;
-        color: var(--text-primary) !important;
+        background: #ffffff !important;
+        border-color: #cbd5e1 !important;
+        color: #1e293b !important;
         border-radius: 10px !important;
     }
 
@@ -291,12 +294,12 @@ st.markdown("""
         padding: 0.5rem 0;
     }
     .stSlider [data-baseweb="slider"] [role="slider"] {
-        background: var(--accent-teal) !important;
-        border-color: var(--accent-teal) !important;
+        background: #0891b2 !important;
+        border-color: #0891b2 !important;
     }
     .stSlider [data-baseweb="slider"] div[data-testid="stThumbValue"] {
-        background: var(--accent-teal) !important;
-        color: #000 !important;
+        background: #0891b2 !important;
+        color: #fff !important;
         border-radius: 6px !important;
     }
 
@@ -304,7 +307,7 @@ st.markdown("""
     .stTextInput label, .stSelectbox label, .stSlider label {
         font-size: 0.78rem !important;
         font-weight: 500 !important;
-        color: var(--text-muted) !important;
+        color: #475569 !important;
         letter-spacing: 0.05em !important;
         text-transform: uppercase !important;
         margin-bottom: 4px !important;
@@ -333,12 +336,12 @@ st.markdown("""
     .footer {
         text-align: center;
         padding: 1.5rem 0 0.5rem;
-        color: var(--text-muted);
+        color: #64748b;
         font-size: 0.78rem;
-        border-top: 1px solid var(--border);
+        border-top: 1px solid #e2e8f0;
         margin-top: 2rem;
     }
-    .footer span { color: var(--accent-teal); font-weight: 600; }
+    .footer span { color: #0891b2; font-weight: 600; }
 
     /* ---- Alert/Info Boxes ---- */
     .info-box {
@@ -353,9 +356,9 @@ st.markdown("""
 
     /* ---- Scrollbar ---- */
     ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: rgba(0,212,177,0.4); }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #0891b2; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -458,11 +461,11 @@ with st.sidebar:
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown('<div class="nav-section-label">System Info</div>', unsafe_allow_html=True)
     st.markdown(f"""
-    <div style="background:rgba(0,212,177,0.06);border:1px solid rgba(0,212,177,0.15);
-                border-radius:10px;padding:0.9rem 1rem;font-size:0.78rem;color:#94a3b8;line-height:1.8;">
-        🗓️ <b style="color:#e2e8f0">June 2025</b><br>
+    <div style="background:#f0fdf4;border:1px solid #bbf7d0;
+                border-radius:10px;padding:0.9rem 1rem;font-size:0.78rem;color:#475569;line-height:1.8;">
+        🗓️ <b style="color:#1e293b">June 2025</b><br>
         🔄 Data refreshed<br>
-        🟢 <span style="color:#10b981">System Operational</span>
+        🟢 <span style="color:#059669">System Operational</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -618,20 +621,20 @@ elif page == "Patients":
     c1, c2, c3 = st.columns(3)
     with c1:
         st.markdown(f"""<div class="section-card" style="text-align:center;padding:1rem">
-            <div style="font-size:1.8rem;font-family:'Syne',sans-serif;font-weight:800;color:#3b82f6">{len(filtered_pats)}</div>
-            <div style="font-size:0.75rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em">Filtered Patients</div>
+            <div style="font-size:1.8rem;font-family:'Syne',sans-serif;font-weight:800;color:#2563eb">{len(filtered_pats)}</div>
+            <div style="font-size:0.75rem;color:#64748b;text-transform:uppercase;letter-spacing:.1em">Filtered Patients</div>
         </div>""", unsafe_allow_html=True)
     with c2:
         avg_age = int(filtered_pats["age"].mean()) if "age" in filtered_pats.columns and len(filtered_pats) > 0 else "—"
         st.markdown(f"""<div class="section-card" style="text-align:center;padding:1rem">
-            <div style="font-size:1.8rem;font-family:'Syne',sans-serif;font-weight:800;color:#f472b6">{avg_age}</div>
-            <div style="font-size:0.75rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em">Avg Age</div>
+            <div style="font-size:1.8rem;font-family:'Syne',sans-serif;font-weight:800;color:#db2777">{avg_age}</div>
+            <div style="font-size:0.75rem;color:#64748b;text-transform:uppercase;letter-spacing:.1em">Avg Age</div>
         </div>""", unsafe_allow_html=True)
     with c3:
         cities_count = filtered_pats["city"].nunique() if "city" in filtered_pats.columns else "—"
         st.markdown(f"""<div class="section-card" style="text-align:center;padding:1rem">
-            <div style="font-size:1.8rem;font-family:'Syne',sans-serif;font-weight:800;color:#00d4b1">{cities_count}</div>
-            <div style="font-size:0.75rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em">Cities</div>
+            <div style="font-size:1.8rem;font-family:'Syne',sans-serif;font-weight:800;color:#0891b2">{cities_count}</div>
+            <div style="font-size:0.75rem;color:#64748b;text-transform:uppercase;letter-spacing:.1em">Cities</div>
         </div>""", unsafe_allow_html=True)
 
     st.markdown('<div class="section-card">', unsafe_allow_html=True)
